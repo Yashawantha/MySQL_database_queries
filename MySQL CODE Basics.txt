@@ -1,0 +1,36 @@
+MySQL
+
+Basics about databases
+#  Displays the database present in MySQL
+SHOW DATABASES;
+#  using  the database world database in the MySQL
+USE world;
+#  Checking  the tables present in world database in the MySQL
+SHOW TABLES;
+#  Selecting  the city table present in world database in the MySQL
+SELECT * FROM city
+Creating database
+# create table in database
+USE customer;
+# Using data base customer created earlier to create the table customer_info
+CREATE TABLE customer_info (
+id INTEGER,
+first_name VARCHAR(15),
+last_name VARCHAR(15));
+
+
+# Displaying customer_info  table 
+SELECT * FROM customer_info;
+# adding data into customer_info table
+INSERT INTO customer_info(id,first_name,last_name)
+VALUES(1,'Yash','Gowda');
+INSERT INTO customer_info(id,first_name,last_name)
+VALUES(2,'Honisha	','Gowda');
+# Deleting customer_info table
+DROP TABLE customer_info;
+# Deleting customer database
+DROP DATABASE customer;
+
+
+
+
